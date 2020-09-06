@@ -112,7 +112,7 @@
             <plugin>
                 <groupId>com.xenoamess</groupId>
                 <artifactId>add-from-repo-maven-plugin</artifactId>
-                <version>0.0.5</version>
+                <version>0.0.6</version>
                 <executions>
                     <execution>
                         <id>a</id>
@@ -120,20 +120,10 @@
                             <goal>addTestsFromRepo</goal>
                         </goals>
                         <configuration>
-                            <repoGitUri>https://github.com/apache/commons-io</repoGitUri>
-                            <relativeDirectory>/src/test/java</relativeDirectory>
-                            <outputDirectory>${project.build.directory}/generated-test-sources/java</outputDirectory>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>b</id>
-                        <goals>
-                            <goal>addFromRepo</goal>
-                        </goals>
-                        <configuration>
-                            <repoGitUri>https://github.com/apache/commons-io</repoGitUri>
-                            <relativeDirectory>/src/test/resources</relativeDirectory>
-                            <outputDirectory>${project.build.directory}/src/test/resources</outputDirectory>
+                            <repoGitUri>https://gitbox.apache.org/repos/asf/commons-io.git</repoGitUri>
+                            <repoGitBranch>commons-io-2.8.0-RC1</repoGitBranch>
+                            <relativeDirectory>/src/test/</relativeDirectory>
+                            <outputDirectory>${project.build.directory}/generated-test-sources/</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
