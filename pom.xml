@@ -149,8 +149,8 @@
             </snapshots>
         </repository>
         <repository>
-            <id>apache</id>
-            <name>apache</name>
+            <id>apache-snapshot</id>
+            <name>apache-snapshot</name>
             <url>https://repository.apache.org/snapshots/</url>
             <releases>
                 <enabled>false</enabled>
