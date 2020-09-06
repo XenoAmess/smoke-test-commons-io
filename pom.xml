@@ -115,6 +115,7 @@
                 <version>0.0.6</version>
                 <executions>
                     <execution>
+                        <phase>initialize</phase>
                         <goals>
                             <goal>addTestsFromRepo</goal>
                         </goals>
