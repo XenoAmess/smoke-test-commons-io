@@ -138,8 +138,8 @@
 <!--            <url>https://repo1.maven.org/maven2/</url>-->
 <!--        </repository>-->
         <repository>
-            <id>apache</id>
-            <name>apache2</name>
+            <id>apache2-dist</id>
+            <name>apache2-dist</name>
             <url>https://dist.apache.org/repos/dist/dev</url>
             <releases>
                 <enabled>true</enabled>
