@@ -126,6 +126,18 @@
                             <outputDirectory>${project.build.directory}/generated-test-sources/</outputDirectory>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>b</id>
+                        <goals>
+                            <goal>addTestsFromRepo</goal>
+                        </goals>
+                        <configuration>
+                            <repoGitUri>https://gitbox.apache.org/repos/asf/commons-io.git</repoGitUri>
+                            <repoGitBranch>commons-io-2.8.0-RC1</repoGitBranch>
+                            <relativeDirectory>/src/test/</relativeDirectory>
+                            <outputDirectory>${project.basedir}/src/test/</outputDirectory>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
